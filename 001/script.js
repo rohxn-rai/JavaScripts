@@ -67,3 +67,45 @@ const PIE = 3.14;
 
 // MDN Opperator proceedence
 // it has all the squence of order of execution mentioned in the order of their occurance
+
+
+// Strings
+const firstName="John";
+const lastName="Smith";
+const birthYear=2002;
+const job="Developer";
+const nowYear=2025;
+
+// Before ES6
+const john = "I'm " + firstName + ", a " + (nowYear - birthYear) + " year old " + job + "!";
+console.log(john);
+console.log("String with\n\
+multiple\n\
+lines");
+
+// After ES6
+const johnNew = `I'm ${firstName}, a ${nowYear-birthYear} year old ${job}!`;
+console.log(johnNew);
+console.log(`String with
+multiple
+lines`);
+
+
+// If Else Statement
+const sarahBirthYear = 2000;
+const JohnBirthYear = 2008;
+const jisOldEnough = JohnBirthYear - nowYear >= 18;
+
+if(jisOldEnough) {
+    console.log("John is old enough!");
+}
+else {
+    console.log("John is not old enough!");
+}
+
+if(nowYear-sarahBirthYear>=18) {
+    console.log("Sarah is old enough!");
+}
+else {
+    console.log("Sarah is not old enough!");
+}
