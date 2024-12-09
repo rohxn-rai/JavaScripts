@@ -56,3 +56,14 @@ const PIE = 3.14;
 
 // Never try to change the const variable
 // PIE = 3.141
+
+
+// Operater are same for all languages both assignment and mathematical operator
+
+
+// Comparative opperator
+
+// > , < , >= , <= , <>
+
+// MDN Opperator proceedence
+// it has all the squence of order of execution mentioned in the order of their occurance
