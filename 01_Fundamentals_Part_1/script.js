@@ -110,3 +110,4 @@ else {
     const yearsLeft = 18 - (nowYear - sarahBirthYear);
     console.log(`Sarah is not old enough! Wait for ${yearsLeft} years to apply.`);
 }
+
