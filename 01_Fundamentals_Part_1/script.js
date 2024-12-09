@@ -92,20 +92,21 @@ lines`);
 
 
 // If Else Statement
-const sarahBirthYear = 2000;
-const JohnBirthYear = 2008;
-const jisOldEnough = JohnBirthYear - nowYear >= 18;
-
+const sarahBirthYear = 2002;
+const johnBirthYear = 2008;
+const jisOldEnough = johnBirthYear - nowYear > 17;
 if(jisOldEnough) {
-    console.log("John is old enough!");
+    console.log(`John is old enough!`);
 }
 else {
-    console.log("John is not old enough!");
+    const yearsLeft = 18 - (nowYear - johnBirthYear);
+    console.log(`John is not old enough! Wait for ${yearsLeft} years to apply.`);
 }
 
-if(nowYear-sarahBirthYear>=18) {
-    console.log("Sarah is old enough!");
+if(nowYear-sarahBirthYear>17) {
+    console.log(`Sarah is old enough!`);
 }
 else {
-    console.log("Sarah is not old enough!");
+    const yearsLeft = 18 - (nowYear - sarahBirthYear);
+    console.log(`Sarah is not old enough! Wait for ${yearsLeft} years to apply.`);
 }
