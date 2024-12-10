@@ -212,3 +212,14 @@ if (hasDriverLicense && hasGoodVision) {
 } else {
     console.log(`Someone else should drive...`);
 }
+
+const isTired = false;
+console.log(hasDriverLicense || hasGoodVision || isTired);
+console.log(hasDriverLicense && hasGoodVision && isTired);
+
+// Better preparing the conditions
+if (hasDriverLicense && hasGoodVision && !isTired) {
+    console.log(`Sarah is able to Drive!`);
+} else {
+    console.log(`Someone else should drive...`);
+}
