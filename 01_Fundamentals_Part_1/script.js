@@ -223,3 +223,52 @@ if (hasDriverLicense && hasGoodVision && !isTired) {
 } else {
     console.log(`Someone else should drive...`);
 }
+
+
+// Switch Case Funtion
+const day = `Sunday`;   // Don't hard code this. 
+                        // It is supposed to be a user input
+
+// Switch vs If-Else
+switch(day) {
+    case `Monday`:
+        console.log(`Fundamentals of JavaScript.`);
+        break;
+    case `Tuesday`:
+        console.log(`OOPS in JavaScript.`);
+        break;
+    case `Wednesday`:
+        console.log(`HTML, CSS and JavaScript.`);
+        break;
+    case `Thursday`:
+        console.log(`Assignment day.`);
+        break;
+    case `Friday`:
+        console.log(`Project day.`);
+        break;
+    case `Saturday`:
+    case `Sunday`:
+        console.log(`It's The Weekend enjoy.`);
+        break;
+    default:
+        console.log(`Not a valid day!`);
+        break;
+}
+// `break;` is a very neccessory block otherwise all the code 
+// will start to run if it meets the condiiton.
+
+if (day ===`Monday`) {
+    console.log(`Fundamentals of JavaScript.`);
+} else if (day === `Tuesday`) {
+    console.log(`OOPS in JavaScript.`);
+} else if (day === `Wednesday`) {
+    console.log(`HTML, CSS and JavaScript.`)
+} else if (day === `Thursday`) {
+    console.log(`Assignment day.`);
+} else if (day === `Friday`) {
+    console.log(`Project day.`);
+} else if (day === `Saturday` || day === `Sunday`) {
+    console.log(`It's The Weekend enjoy.`);
+} else {
+    console.log(`Not a valid day!`);
+}
