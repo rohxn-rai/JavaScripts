@@ -1,3 +1,5 @@
+// This is my personal notes
+
 // All outputs in javascript console
 
 
@@ -111,3 +113,102 @@ else {
     console.log(`Sarah is not old enough! Wait for ${yearsLeft} years to apply.`);
 }
 
+
+// Data Type Convesion
+const inputyear = `1991`;
+console.log(inputyear + 18);  // String addition
+console.log(Number(inputyear) + 18);  // Number addition
+console.log(Number(`Jonas`));  // Not all strings can be converted
+console.log(typeof(Number(`Jonas`)));  // NaN(Not a Number) is a invaild NUMBER nut still a NUMBER
+
+
+// Data Type Coercion
+console.log("I am " + 23 + " years old.");
+console.log("I am " + "23" + " years old.");
+console.log(`23` - `20` - 3);
+console.log(`23` * 2);
+
+let n = `1` + 1;  // Coercion into a string
+n = n - 1;  // Coersion into a Number
+console.log(n);  // Output into a Number
+
+console.log(2+3+4+`5`);  // Final result is a string
+console.log(`10`-`4`-`3`-2+`5`);  // Final result is a string
+
+
+// 5 Falsy Values: 0, ``, undefined, null, NaN
+// All other values are truely value
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean(`Jonas`));
+console.log(Boolean({}));
+console.log(Boolean(``));
+
+// Can be used very well as a condition statement
+const money=0;
+if(money) {
+    console.log(`Don't spend it all :]`);
+} else {
+    console.log(`You should get a job!`);
+}
+
+let height;
+if (height) {
+    console.log(`Yay! Height is defined!`);
+} else {
+    console.log(`Height is undefined!`);
+}
+
+
+// === or == Equality Operator
+// const age = 18  // Number
+const age = `18`  // String
+if (age === 18) console.log(`You just became an adult :D (Strict)`);
+if (age == 18) console.log(`You just became an adult :D (Loose)`);
+
+
+// Inputs
+// Commented because it asks for prompt on each reload
+// const favouriteInput = Number(prompt(`What's your favourite number?`));
+// console.log(favouriteInput);
+// console.log(typeof favouriteInput);
+
+// if (favouriteInput === 23) {
+//     console.log(`Cool!, 23 is an amazing number!`);
+// } else if (favouriteInput === 7) {
+//     console.log(`7 is also a cool number, I guess!`);
+// } else {
+//     console.log(`${favouriteInput} is not a cool number`);
+// }
+
+
+// Boolean Logic (AND, OR & NOT)
+
+// AND (A AND B)
+// Table   False    True
+// False   False    False
+// True    False    True
+
+// OR (A OR B)
+// Table   False    True
+// False   False    True
+// True    True     True
+
+// NOT (!A)
+// Table   False    True
+//         True     False
+
+// Example
+const hasDriverLicense = true;
+const hasGoodVision = true;
+
+console.log(hasDriverLicense && hasGoodVision);
+console.log(hasDriverLicense || hasGoodVision);
+console.log(!hasDriverLicense,!hasGoodVision);
+
+if (hasDriverLicense && hasGoodVision) {
+    console.log(`Sarah is able to Drive!`);
+} else {
+    console.log(`Someone else should drive...`);
+}
