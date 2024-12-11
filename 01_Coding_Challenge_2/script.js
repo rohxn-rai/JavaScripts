@@ -8,7 +8,6 @@
 // BMI (28.3) is higher than John's (23.9)!"
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-
 // BMI calculator
 
 // Data 1
@@ -17,17 +16,20 @@ let heightMark = 1.69;
 let massJohn = 92;
 let heightJohn = 1.95;
 
-let BMIMark = massMark / (heightMark ** 2);
-let BMIJohn = massJohn / (heightJohn ** 2);
+let BMIMark = massMark / heightMark ** 2;
+let BMIJohn = massJohn / heightJohn ** 2;
 console.log("BMI of Mark: " + BMIMark);
 console.log("BMI of John: " + BMIJohn);
 
-let markHigherBMI = BMIMark>BMIJohn;
-if(markHigherBMI) {
-    console.log(`Mark's BMI (${BMIMark}) is higher than John's BMI (${BMIJohn})!`)
-}
-else {
-    console.log(`John's BMI (${BMIJohn}) is higher than Mark's BMI (${BMIMark})!`)
+let markHigherBMI = BMIMark > BMIJohn;
+if (markHigherBMI) {
+  console.log(
+    `Mark's BMI (${BMIMark}) is higher than John's BMI (${BMIJohn})!`
+  );
+} else {
+  console.log(
+    `John's BMI (${BMIJohn}) is higher than Mark's BMI (${BMIMark})!`
+  );
 }
 
 // Data 2
@@ -36,15 +38,18 @@ heightMark = 1.88;
 massJohn = 85;
 heightJohn = 1.76;
 
-BMIMark = massMark / (heightMark ** 2);
-BMIJohn = massJohn / (heightJohn ** 2);
+BMIMark = massMark / heightMark ** 2;
+BMIJohn = massJohn / heightJohn ** 2;
 console.log("BMI of Mark: " + BMIMark);
 console.log("BMI of John: " + BMIJohn);
 
-markHigherBMI = BMIMark>BMIJohn;
-if(markHigherBMI) {
-    console.log(`Mark's BMI (${BMIMark}) is higher than John's BMI (${BMIJohn})!`)
-}
-else {
-    console.log(`John's BMI (${BMIJohn}) is higher than Mark's BMI (${BMIMark})!`)
+markHigherBMI = BMIMark > BMIJohn;
+if (markHigherBMI) {
+  console.log(
+    `Mark's BMI (${BMIMark}) is higher than John's BMI (${BMIJohn})!`
+  );
+} else {
+  console.log(
+    `John's BMI (${BMIJohn}) is higher than Mark's BMI (${BMIMark})!`
+  );
 }
