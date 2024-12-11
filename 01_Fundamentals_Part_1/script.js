@@ -163,9 +163,9 @@ if (height) {
 
 // === or == Equality Operator
 // const age = 18  // Number
-const age = `18`  // String
-if (age === 18) console.log(`You just became an adult :D (Strict)`);
-if (age == 18) console.log(`You just became an adult :D (Loose)`);
+const ageEqality = `18`  // String
+if (ageEqality === 18) console.log(`You just became an adult :D (Strict)`);
+if (ageEqality == 18) console.log(`You just became an adult :D (Loose)`);
 
 
 // Inputs
@@ -231,7 +231,7 @@ const day = `Sunday`;   // Don't hard code this.
 
 // Switch vs If-Else
 switch(day) {
-    case `Monday`:
+    case `Monday`:  // day === `Monday`
         console.log(`Fundamentals of JavaScript.`);
         break;
     case `Tuesday`:
@@ -272,3 +272,19 @@ if (day ===`Monday`) {
 } else {
     console.log(`Not a valid day!`);
 }
+
+
+// The Conditional (Ternary) Operator
+const age = 23;
+age >= 18 ? console.log(`I like to drink wine.`) : console.log(`I like to drink water.`);
+let drink = age >= 18 ? `Wine` : `Water`;
+console.log(drink);
+
+if (age >= 18) {
+    drink = `Wine`
+} else {
+    drink = `Water`
+}
+console.log(drink);
+
+console.log(`I like to drink ${age >= 18 ? `wine` : `water`}`);
